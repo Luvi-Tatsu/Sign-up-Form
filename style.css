@@ -1,0 +1,179 @@
+@font-face {
+        font-family: "thefont";
+        src: url(norse-bold-webfont.woff2)format(woff2);
+        src: url(norse-bold-webfont.woff)format(woff);
+        font-weight: normal;
+        font-style: normal;
+      }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica,Arial, sans-serif;
+    display: flex;
+    width: 100%;
+}
+.img-bg, .content{
+    flex:1;
+}
+.img-bg{
+    max-width: 30vw;
+    height: 100vh;
+    background-image: url('bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    position: relative;
+    top:25vh;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 1;
+    max-width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.odin{
+    height: 7rem;
+    
+}
+.logo h1{
+    font-family: "thefont";
+    color: white;
+    font-size: 5rem;
+    padding-left: .05em;
+    padding-top: .05em;
+}
+div .content{
+    display: flex;
+}
+.form-header{
+    width: 75vh;
+    padding-left: 2em;
+    font-weight: bold;
+}
+.form-header p{
+font-size: 1.2rem;
+max-width: 55ch;
+}
+.content .hdspc{
+    height: 15vh;
+}
+
+#innerlayer{
+position: relative;
+    background-color: white;
+    border: none;
+    padding: 1em 1em 1em 2em;
+    border: 1px solid white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);; 
+}
+
+#btnlyr{
+     padding: 1em 1em 1em 2em;
+}
+
+.header-end, .title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+div .first-name, 
+div .last-name,
+div .e-mail,
+div .phone-num,
+div .pass,
+div .reppass
+{
+display: flex;
+flex-direction: column;
+}
+
+.names, .credentials, .password{
+    display: flex;
+    
+}
+
+div.last-name, div .phone-num, div.reppass  {
+    margin-left: 5em;
+    width: 12rem;
+}
+input{
+    margin-bottom: 1em;
+    width: 12rem;
+}
+
+.submit{
+    font-family:  Helvetica, sans-serif;
+    width: 150px;
+    height: 55px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 50px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 55px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all .03s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 10px 0 20px 0;
+}
+
+.submit:hover{
+    background-color: rgb(57, 195, 57);
+    box-shadow: 0px 15px 20px rgba(100, 235, 98, 0.784);
+    color: white;
+    transform: translateY(-7px);
+}
+
+input:hover{
+border-color: rgb(10, 246, 65);
+box-shadow: 1px 5px 10px rgba(39, 213, 88, 0.2); 
+}
+input:focus{
+    border-color: greenyellow;
+    box-shadow: 1px 5px 10px rgba(39, 213, 88, 0.2);
+}
+input[type="password"]:invalid{
+border: 1px solid red;
+/* border-color: 1px solid red; */
+box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+input{
+    padding: .3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family:  Helvetica, sans-serif;
+    height: initial;
+    font-size: 1rem;
+    color: black;
+    background-color: 1px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
+    outline: none;
+}
+label{
+    font-size: .85rem;
+    font-weight: 550;
+    letter-spacing: .03px;
+}
+
+footer{
+    width: 35vw;
+    position:absolute;
+    bottom: 0;
+   
+}
+.credit{
+    text-align: center;
+    color: white;
+    
+}
